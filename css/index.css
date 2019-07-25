@@ -53,15 +53,15 @@
 .tabs .tabs-items .tabs-item .card .image-wrap {
   width: 60%;
 }
+@media (max-width: 600px) {
+  .tabs .tabs-items .tabs-item .card .image-wrap {
+    width: 80%;
+  }
+}
 .tabs .tabs-items .tabs-item .card img {
   width: 100%;
   height: auto;
   box-shadow: #000000 0px 14px 50px -24px;
-}
-@media (max-width: 600px) {
-  .tabs .tabs-items .tabs-item .card img {
-    width: 80%;
-  }
 }
 .tabs .tabs-items .tabs-item .card .work-info {
   width: 60%;
@@ -74,7 +74,7 @@
   padding: 24px 0;
   border-bottom: 1px solid black;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .tabs .tabs-items .tabs-item .card .work-info {
     width: 80%;
   }
