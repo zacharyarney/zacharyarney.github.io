@@ -29,7 +29,7 @@
         img {
           width: 100%;
           height: auto;
-          box-shadow: rgb(0, 0, 0) 0px 15px 50px -20px;
+          box-shadow: rgb(0, 0, 0) 0px 14px 50px -24px;
 
           @media (max-width: 600px) {
             width: 80%;
@@ -42,7 +42,9 @@
           align-items: flex-start;
           font-family: 'Barlow';
           font-size: 1.8rem;
-          margin: 12px 0;
+          opacity: 0.8;
+          padding: 24px 0;
+          border-bottom: 1px solid black;
           // letter-spacing: 6px;
 
           @media (max-width: 400px) {
@@ -54,7 +56,7 @@
             color: black;
 
             &:hover {
-              opacity: 0.8;
+              opacity: 0.5;
             }
           }
 
@@ -65,7 +67,11 @@
           .repo {
             font-style: italic;
             color: black;
-            margin: 12px 0 0;
+            margin: 20px 0 0;
+
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
