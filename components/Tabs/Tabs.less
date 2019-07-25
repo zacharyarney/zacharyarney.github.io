@@ -9,6 +9,7 @@
       margin-top: 0;
       font-weight: lighter;
       font-size: 4rem;
+      opacity: @font-opacity;
     }
     .tabs-item {
       display: none;
@@ -42,7 +43,7 @@
           align-items: flex-start;
           font-family: 'Barlow';
           font-size: 1.8rem;
-          opacity: 0.83;
+          opacity: @font-opacity;
           padding: 24px 0;
           border-bottom: 1px solid black;
           // letter-spacing: 6px;
@@ -56,7 +57,7 @@
             color: black;
 
             &:hover {
-              opacity: 0.7;
+              opacity: @hover-opacity;
             }
           }
 
@@ -70,7 +71,7 @@
             margin: 20px 0 0;
 
             &:hover {
-              opacity: 0.7;
+              opacity: @hover-opacity;
             }
           }
         }
@@ -94,7 +95,7 @@
     padding: 19px 25px 19px;
     font-family: 'bebas_neue_regularregular';
     font-size: 24px;
-    opacity: 0.83;
+    opacity: @font-opacity;
     border-top: 1px solid white;
     cursor: pointer;
     &:hover {
