@@ -70,7 +70,7 @@
   align-items: flex-start;
   font-family: 'Barlow';
   font-size: 1.8rem;
-  opacity: 0.8;
+  opacity: 0.83;
   padding: 24px 0;
   border-bottom: 1px solid black;
 }
@@ -83,7 +83,7 @@
   color: black;
 }
 .tabs .tabs-items .tabs-item .card .work-info .project-name:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .tabs .tabs-items .tabs-item .card .work-info .credit {
   font-style: italic;
@@ -95,7 +95,7 @@
   margin: 20px 0 0;
 }
 .tabs .tabs-items .tabs-item .card .work-info .repo:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .tabs .tabs-items .tabs-item-selected {
   display: flex;
@@ -112,7 +112,7 @@
   padding: 19px 25px 19px;
   font-family: 'bebas_neue_regularregular';
   font-size: 24px;
-  opacity: 0.8;
+  opacity: 0.83;
   border-top: 1px solid white;
   cursor: pointer;
 }
@@ -151,7 +151,7 @@ body {
 }
 .info header {
   font-family: 'bebas_neue_regularregular';
-  opacity: 0.8;
+  opacity: 0.83;
   font-weight: normal;
   margin-bottom: 0;
   font-size: 3rem;
@@ -165,9 +165,9 @@ body {
 .info .contact a {
   font-family: 'bebas_neuebold';
   color: black;
-  opacity: 0.8;
+  opacity: 0.83;
   font-size: 2.5rem;
 }
 .info .contact a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
