@@ -1,0 +1,99 @@
+.tabs {
+  width: 100%;
+  margin-top: 40px;
+  .tabs-items {
+    .tab-header {
+      display: flex;
+      justify-content: center;
+      font-family: 'bebas_neuelight';
+      margin-top: 0;
+      font-weight: lighter;
+      font-size: 4rem;
+    }
+    .tabs-item {
+      display: none;
+      flex-flow: column nowrap;
+      margin-top: 20px;
+      margin-bottom: 80px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        img {
+          width: 60%;
+          height: auto;
+          box-shadow: rgb(0, 0, 0) 0px 15px 50px -20px;
+
+          @media (max-width: 600px) {
+            width: 80%;
+          }
+        }
+        .work-info {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          font-family: 'Barlow';
+          font-size: 1.8rem;
+          margin: 12px 0;
+          // letter-spacing: 6px;
+
+          @media (max-width: 400px) {
+            // letter-spacing: 1px;
+            width: 80%;
+          }
+
+          a {
+            color: black;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+          .credit {
+            font-style: italic;
+            margin: 12px 0 0;
+          }
+          .repo {
+            font-style: italic;
+            margin: 12px 0 0;
+          }
+        }
+      }
+    }
+    .tabs-item-selected {
+      display: flex;
+    }
+  }
+
+  .tabs-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tabs-link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 19px 25px 19px;
+    font-family: 'bebas_neue_regularregular';
+    font-size: 24px;
+    opacity: 0.8;
+    border-top: 1px solid white;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+  .tabs-link-selected {
+    border-top: 1px solid black;
+    z-index: 2;
+    color: black;
+  }
+}

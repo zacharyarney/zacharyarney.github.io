@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Zach Arney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Zach Arney</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-</head>
-
-<body>
-  <div class="info">
-
-    <header>
-      <h1>Zach Arney</h1>
-    </header>
-    <div>
-      <p>Producer / Recording Engineer / Mix Engineer</p>
-      <a href="mailto:zachary.arney@gmail.com">email</a>
-    </div>
-
-  </div>
-  <!--<img src="1500x500.jpg">-->
-  <div class="discog">
-    <div>
-      <img src="./img/bbh.JPG" alt="Album art for Lightning Round by Bad Bad Hats">
-      <div class="album-info">
-        <a href="https://badbadhats.bandcamp.com/album/lightning-round" class="artist-album">Bad Bad Hats - Lightning Round - 2018</a>
-        <p class="credit">Engineer</p>
+  <body>
+    <script defer="defer" src="./components/Tabs/Tabs.js"></script>
+    <div class="info">
+      <header>
+        <h1>Zach Arney</h1>
+      </header>
+      <div class="contact">
+        <a href="mailto:zachary.arney@gmail.com">email</a>
       </div>
     </div>
-    <div>
-      <img src="./img/gngd.jpg" alt="Album art for Good Night Gold Dust by Good Night Gold Dust">
-      <div class="album-info">
-        <a href="https://goodnightgolddust.bandcamp.com/album/g-n-g-d" class="artist-album">Good Night Gold Dust - Good Night Gold Dust - 2015</a>
-        <p class="credit">Engineer</p>
+    <!--<img src="1500x500.jpg">-->
+    <div class="tabs">
+      <div class="tabs-links">
+        <div class="tabs-link" data-tab="1">Code</div>
+        <div class="tabs-link" data-tab="2">Audio</div>
+      </div>
+      <div class="tabs-items">
+        <div class="tabs-item" data-tab="1">
+          <div class="tab-header">Web Dev</div>
+          <div class="card">
+            <img src="./img/lambda-notes.png" alt="Lambda Notes list view">
+            <div class="work-info">
+              <a
+              href="https://za-lambda-notes.netlify.com/"
+              class="project-name">Lambda Notes</a>
+              <a
+              href="https://github.com/zacharyarney/front-end-project-week"
+              class="repo">GitHub Repo</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/sveza.png" alt="Sveza dashboard view">
+            <div class="work-info">
+              <a
+              href="https://team-home.netlify.com/"
+              class="project-name">Sveza</a>
+              <a
+              href="https://github.com/Lambda-School-Labs/labs-team-home/tree/labs9-master#team-home"
+              class="repo">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+          <div class="tabs-item" data-tab="2">
+            <div class="tab-header">Recording / Mixing / Production</div>
+            <div class="card">
+              <img
+              src="./img/bbh.JPG"
+              alt="Album art for Lightning Round by Bad Bad Hats"
+              />
+              <div class="work-info">
+                <a
+                href="https://badbadhats.bandcamp.com/album/lightning-round"
+                class="artist-album">Bad Bad Hats - Lightning Round - 2018</a>
+                <p class="credit">Engineer</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+              src="./img/gngd.jpg"
+              alt="Album art for Good Night Gold Dust by Good Night Gold Dust"
+              />
+              <div class="work-info">
+                <a
+                href="https://goodnightgolddust.bandcamp.com/album/g-n-g-d"
+                class="artist-album">Good Night Gold Dust - Good Night Gold Dust - 2015</a>
+                <p class="credit">Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
