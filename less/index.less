@@ -55,7 +55,6 @@ body {
   font-size: 1.6rem;
   width: 100%;
   display: flex;
-  text-align: center;
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
@@ -65,29 +64,97 @@ body {
   }
 
   header {
-    font-family: 'bebas_neue_regularregular';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
     opacity: @font-opacity;
     font-weight: normal;
     margin-bottom: 0;
     font-size: 3rem;
+
+    h1 {
+      font-family: 'bebas_neue_regularregular';
+      font-size: 6rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: 'bebas_neuelight';
+      font-weight: lighter;
+      font-size: 4rem;
+      opacity: @font-opacity;
+      margin: 0;
+      @media (max-width: 380px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    .blurb {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-family: 'Barlow';
+        font-size: 1.8rem;
+        opacity: @font-opacity;
+        margin: 0;
+      }
+    }
   }
 
-  .contact p {
-    font-family: 'bebas_neuelight';
-    margin-top: 0;
-    font-weight: lighter;
-    font-size: 4rem;
-  }
+  .contact {
+    display: flex;
+    margin-top: 50px;
 
-  .contact a {
-    font-family: 'bebas_neuebold';
-    color: black;
-    opacity: @font-opacity;
-    font-size: 2.5rem;
-    padding: 12px;
-    &:hover {
+    p {
+      font-family: 'bebas_neuelight';
+      margin-top: 0;
+      font-weight: lighter;
+      font-size: 4rem;
+    }
+
+    a {
+      font-family: 'bebas_neue_regularregular';
+      text-decoration: none;
       color: white;
       background-color: black;
+      opacity: @font-opacity;
+      font-size: 2.4rem;
+      padding: 19px 59px;
+      border: 1px solid black;
+      animation-name: out;
+      animation-duration: 400ms;
+      box-shadow: 0 0 0 0 rgb(0, 0, 0);
+
+      &:active {
+        color: black;
+        background-color: white;
+      }
+      &:hover {
+        animation-name: in;
+        animation-duration: 370ms;
+        box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+      }
+      @keyframes in {
+        from {
+          box-shadow: 0 0 0 0 rgb(0, 0, 0);
+        }
+        to {
+          box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+        }
+      }
+      @keyframes out {
+        from {
+          box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+        }
+        to {
+          box-shadow: 0 0 0 0 rgb(0, 0, 0);
+        }
+      }
     }
   }
 }

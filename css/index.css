@@ -28,7 +28,7 @@
 }
 .tabs {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .tabs .tabs-items .tab-header {
   display: flex;
@@ -109,22 +109,29 @@
 .tabs .tabs-link {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  padding: 19px 25px 19px;
+  padding: 20px 0;
   font-family: 'bebas_neue_regularregular';
   font-size: 24px;
   opacity: 0.815;
-  border-top: 1px solid white;
   cursor: pointer;
+  color: black;
+  background-color: white;
 }
 .tabs .tabs-link:hover {
   color: white;
   background-color: black;
 }
 .tabs .tabs-link-selected {
+  padding: 19px 0;
   border-top: 1px solid black;
+  border-bottom: 1px solid white;
   z-index: 2;
   color: black;
+}
+.tabs .tabs-link-selected:hover {
+  border-bottom: 1px solid black;
 }
 html {
   font-size: 62.5%;
@@ -140,7 +147,6 @@ body {
   font-size: 1.6rem;
   width: 100%;
   display: flex;
-  text-align: center;
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
@@ -151,11 +157,48 @@ body {
   }
 }
 .info header {
-  font-family: 'bebas_neue_regularregular';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
   opacity: 0.815;
   font-weight: normal;
   margin-bottom: 0;
   font-size: 3rem;
+}
+.info header h1 {
+  font-family: 'bebas_neue_regularregular';
+  font-size: 6rem;
+  margin: 0;
+}
+.info header h2 {
+  font-family: 'bebas_neuelight';
+  font-weight: lighter;
+  font-size: 4rem;
+  opacity: 0.815;
+  margin: 0;
+}
+@media (max-width: 380px) {
+  .info header h2 {
+    font-size: 3.5rem;
+  }
+}
+.info header .blurb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.info header .blurb p {
+  font-family: 'Barlow';
+  font-size: 1.8rem;
+  opacity: 0.815;
+  margin: 0;
+}
+.info .contact {
+  display: flex;
+  margin-top: 50px;
 }
 .info .contact p {
   font-family: 'bebas_neuelight';
@@ -164,13 +207,40 @@ body {
   font-size: 4rem;
 }
 .info .contact a {
-  font-family: 'bebas_neuebold';
-  color: black;
-  opacity: 0.815;
-  font-size: 2.5rem;
-  padding: 12px;
-}
-.info .contact a:hover {
+  font-family: 'bebas_neue_regularregular';
+  text-decoration: none;
   color: white;
   background-color: black;
+  opacity: 0.815;
+  font-size: 2.4rem;
+  padding: 19px 59px;
+  border: 1px solid black;
+  animation-name: out;
+  animation-duration: 400ms;
+  box-shadow: 0 0 0 0 #000000;
+}
+.info .contact a:active {
+  color: black;
+  background-color: white;
+}
+.info .contact a:hover {
+  animation-name: in;
+  animation-duration: 370ms;
+  box-shadow: 0 15px 50px -20px #000000;
+}
+@keyframes in {
+  from {
+    box-shadow: 0 0 0 0 #000000;
+  }
+  to {
+    box-shadow: 0 15px 50px -20px #000000;
+  }
+}
+@keyframes out {
+  from {
+    box-shadow: 0 15px 50px -20px #000000;
+  }
+  to {
+    box-shadow: 0 0 0 0 #000000;
+  }
 }

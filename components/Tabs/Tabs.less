@@ -1,6 +1,6 @@
 .tabs {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
   .tabs-items {
     .tab-header {
       display: flex;
@@ -91,21 +91,28 @@
   .tabs-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    padding: 19px 25px 19px;
+    padding: 20px 0;
     font-family: 'bebas_neue_regularregular';
     font-size: 24px;
     opacity: @font-opacity;
-    border-top: 1px solid white;
     cursor: pointer;
+    color: black;
+    background-color: white;
     &:hover {
       color: white;
       background-color: black;
     }
   }
   .tabs-link-selected {
+    padding: 19px 0;
     border-top: 1px solid black;
+    border-bottom: 1px solid white;
     z-index: 2;
     color: black;
+    &:hover {
+      border-bottom: 1px solid black;
+    }
   }
 }
