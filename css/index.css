@@ -196,17 +196,19 @@ body {
   opacity: 0.815;
   margin: 0;
 }
-.info .contact {
+.contact {
   display: flex;
-  margin-top: 50px;
+  justify-content: center;
+  margin: 50px 0px;
+  width: 100%;
 }
-.info .contact p {
+.contact p {
   font-family: 'bebas_neuelight';
   margin-top: 0;
   font-weight: lighter;
   font-size: 4rem;
 }
-.info .contact a {
+.contact a {
   font-family: 'bebas_neue_regularregular';
   text-decoration: none;
   color: white;
@@ -219,11 +221,11 @@ body {
   animation-duration: 400ms;
   box-shadow: 0 0 0 0 #000000;
 }
-.info .contact a:active {
+.contact a:active {
   color: black;
   background-color: white;
 }
-.info .contact a:hover {
+.contact a:hover {
   animation-name: in;
   animation-duration: 370ms;
   box-shadow: 0 15px 50px -20px #000000;
