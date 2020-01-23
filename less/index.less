@@ -68,7 +68,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    // height: 200px;
     opacity: @font-opacity;
     font-weight: normal;
     margin-bottom: 0;
@@ -92,16 +92,24 @@ body {
     }
 
     .blurb {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
       align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
 
-      p {
-        font-family: 'Barlow';
-        font-size: 1.8rem;
-        opacity: @font-opacity;
-        margin: 0;
+      div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        p {
+          font-family: 'Barlow';
+          font-size: 1.8rem;
+          margin: 0;
+          opacity: @font-opacity;
+          text-align: center;
+        }
       }
     }
   }
