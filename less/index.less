@@ -34,6 +34,7 @@
 
 * {
   box-sizing: border-box;
+  border-radius: 2px;
 }
 
 @import '../components/Tabs/Tabs.less';
@@ -69,7 +70,6 @@ body {
     justify-content: space-between;
     align-items: center;
     // height: 200px;
-    opacity: @font-opacity;
     font-weight: normal;
     margin-bottom: 0;
     font-size: 3rem;
@@ -78,16 +78,71 @@ body {
       font-family: 'bebas_neue_regularregular';
       font-size: 6rem;
       margin: 0;
+      opacity: @font-opacity;
     }
 
     h2 {
       font-family: 'bebas_neuelight';
       font-weight: lighter;
       font-size: 4rem;
-      opacity: @font-opacity;
       margin: 0;
+      opacity: @font-opacity;
       @media (max-width: 380px) {
         font-size: 3.5rem;
+      }
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      margin-top: 34px;
+      opacity: @font-opacity;
+      width: 100%;
+
+      p {
+        font-family: 'bebas_neuelight';
+        margin-top: 0;
+        font-weight: lighter;
+        font-size: 4rem;
+      }
+
+      a {
+        font-family: 'bebas_neue_regularregular';
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        font-size: 2.4rem;
+        padding: 19px 59px;
+        border: 1px solid black;
+        animation-name: out;
+        animation-duration: 400ms;
+        box-shadow: 0 0 0 0 rgb(0, 0, 0);
+
+        &:active {
+          color: black;
+          background-color: white;
+        }
+        &:hover {
+          animation-name: in;
+          animation-duration: 370ms;
+          box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+        }
+        @keyframes in {
+          from {
+            box-shadow: 0 0 0 0 rgb(0, 0, 0);
+          }
+          to {
+            box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+          }
+        }
+        @keyframes out {
+          from {
+            box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
+          }
+          to {
+            box-shadow: 0 0 0 0 rgb(0, 0, 0);
+          }
+        }
       }
     }
 
@@ -110,59 +165,6 @@ body {
           opacity: @font-opacity;
           text-align: center;
         }
-      }
-    }
-  }
-}
-.contact {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0px;
-  width: 100%;
-
-  p {
-    font-family: 'bebas_neuelight';
-    margin-top: 0;
-    font-weight: lighter;
-    font-size: 4rem;
-  }
-
-  a {
-    font-family: 'bebas_neue_regularregular';
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    opacity: @font-opacity;
-    font-size: 2.4rem;
-    padding: 19px 59px;
-    border: 1px solid black;
-    animation-name: out;
-    animation-duration: 400ms;
-    box-shadow: 0 0 0 0 rgb(0, 0, 0);
-
-    &:active {
-      color: black;
-      background-color: white;
-    }
-    &:hover {
-      animation-name: in;
-      animation-duration: 370ms;
-      box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
-    }
-    @keyframes in {
-      from {
-        box-shadow: 0 0 0 0 rgb(0, 0, 0);
-      }
-      to {
-        box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
-      }
-    }
-    @keyframes out {
-      from {
-        box-shadow: 0 15px 50px -20px rgb(0, 0, 0);
-      }
-      to {
-        box-shadow: 0 0 0 0 rgb(0, 0, 0);
       }
     }
   }

@@ -1,6 +1,10 @@
 .tabs {
+  border: 1px solid black;
+  // border-left: 1px solid black;
+  // border-right: 1px solid black;
   width: 100%;
-  margin-top: 50px;
+  margin: 50px 0 40px;
+  padding-bottom: 40px;
   .tabs-items {
     .tab-header {
       display: flex;
@@ -46,6 +50,7 @@
           opacity: @font-opacity;
           padding: 24px 0;
           border-bottom: 1px solid black;
+          border-radius: 0px;
           // letter-spacing: 6px;
 
           @media (max-width: 600px) {
@@ -90,33 +95,44 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-
-  .tabs-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 20px 0;
-    font-family: 'bebas_neue_regularregular';
-    font-size: 24px;
     opacity: @font-opacity;
-    cursor: pointer;
-    color: black;
-    background-color: white;
-    &:hover {
-      color: white;
-      background-color: black;
+
+    .separator {
+      border-left: 1px solid black;
+      height: inherit;
+      width: 0;
     }
-  }
-  .tabs-link-selected {
-    padding: 19px 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid white;
-    z-index: 2;
-    color: black;
-    &:hover {
+
+    .tabs-link {
       border-bottom: 1px solid black;
+      border-radius: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding: 20px 0;
+      font-family: 'bebas_neue_regularregular';
+      font-size: 24px;
+      cursor: pointer;
+      color: black;
+      background-color: #f8f8f8;
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+    .tabs-link-selected {
+      color: black;
+      background-color: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+      color: black;
+      opacity: unset;
+      &:hover {
+        background-color: white;
+        // border-bottom: 1px solid black;
+        color: black;
+      }
     }
   }
 }
