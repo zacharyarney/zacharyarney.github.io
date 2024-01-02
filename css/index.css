@@ -278,8 +278,8 @@ body {
   margin-top: 40px;
   width: 100%;
 
-  p {
-    display: inline;
-    width: fit-content;
-  }
+}
+.info header .blurb .skills p {
+  display: inline;
+  width: fit-content;
 }
