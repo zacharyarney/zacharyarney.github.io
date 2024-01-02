@@ -174,10 +174,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   font-weight: normal;
   margin-bottom: 0;
   font-size: 3rem;
+  width: 100%;
 }
 .info header h1 {
   font-family: 'bebas_neue_regularregular';
@@ -199,7 +200,7 @@ body {
 }
 .info header .contact {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 34px;
   opacity: 0.815;
   width: 100%;
@@ -251,18 +252,34 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   margin-top: 40px;
+  width: 100%;
 }
 .info header .blurb div {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: start;
+  width: 100%;
 }
 .info header .blurb div p {
   font-family: 'Barlow';
   font-size: 1.8rem;
   margin: 0;
   opacity: 0.815;
-  text-align: center;
+  width: 100%;
+  /*text-align: center;*/
+}
+.info header .blurb .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin-top: 40px;
+  width: 100%;
+
+  p {
+    display: inline;
+    width: fit-content;
+  }
 }
