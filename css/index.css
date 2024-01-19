@@ -53,9 +53,9 @@ body {
 
 .info header h2 {
     font-family: "dunbar-tall", sans-serif;
-    font-size: 4rem;
     font-style: normal;
     font-weight: 200;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -67,6 +67,7 @@ body {
 
 .info header .contact {
     display: flex;
+    flex-direction: column;
     justify-content: start;
     margin-top: 34px;
     width: 100%;
@@ -79,43 +80,21 @@ body {
 }
 
 .info header .contact a {
-    animation-name: out;
-    animation-duration: 400ms;
-    background-color: #303030;
-    border: 1px solid #303030;
-    box-shadow: 0 0 0 0 #000000;
-    color: white;
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 66, 'wght' 800;
     font-size: 2.4rem;
-    padding: 19px 59px;
+    height: 3rem;
     text-decoration: none;
 }
 
-.info header .contact a:active {
-    background-color: white;
-}
-
 .info header .contact a:hover {
-    animation-name: in;
-    animation-duration: 370ms;
-    box-shadow: 0 15px 50px -20px #000000;
-}
-
-@keyframes in {
-    from {
-        box-shadow: 0 0 0 0 #000000;
-    }
-    to {
-        box-shadow: 0 15px 50px -20px #000000;
-    }
-}
-
-@keyframes out {
-    from {
-        box-shadow: 0 15px 50px -20px #000000;
-    }
-    to {
-        box-shadow: 0 0 0 0 #000000;
-    }
+    background: #303030;
+    color: white;
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 120, 'wght' 900;
+    font-size: 2.4rem;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .info header .blurb {
@@ -145,7 +124,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-top: 40px;
     width: 100%;
 
 }
@@ -153,6 +131,10 @@ body {
 .info header .blurb .skills p {
     display: inline;
     width: fit-content;
+}
+
+.info header .blurb .bio {
+    margin-top: 40px;
 }
 
 .tabs {
@@ -166,9 +148,8 @@ body {
 .tabs .tabs-items .tab-header {
     display: flex;
     justify-content: center;
-    font-family: "dunbar-tall", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 66, 'wght' 900;
     font-size: 4rem;
     margin-top: 0;
 }
@@ -189,6 +170,11 @@ body {
     max-width: 800px;
     padding: 50px 0px;
 }
+
+/*.tabs .tabs-items .tabs-item .card:hover {*/
+/*    background: lightyellow;*/
+/*    box-shadow: 24px 24px dodgerblue;*/
+/*}*/
 
 .tabs .tabs-items .tabs-item .card .image-wrap {
     width: 60%;
@@ -231,8 +217,13 @@ body {
     margin: 0 0 12px;
 }
 
+.tabs .tabs-items .tabs-item .card .work-info .project-name {
+    width: 100%;
+}
+
 .tabs .tabs-items .tabs-item .card .work-info .project-name:hover {
-    opacity: 0.7;
+    background: #303030;
+    color: white;
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .credit {
@@ -241,10 +232,12 @@ body {
 
 .tabs .tabs-items .tabs-item .card .work-info .repo {
     margin: 12px 0 0;
+    width: 100%;
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .repo:hover {
-    opacity: 0.7;
+    background: #303030;
+    color: white;
 }
 
 .tabs .tabs-items .tabs-item-selected {
@@ -271,8 +264,9 @@ body {
     cursor: pointer;
     display: flex;
     flex-grow: 1;
-    font-family: "allotrope-variable", sans-serif;
-    font-variation-settings: 'wdth' 90, 'wght' 900;
+    font-family: "dunbar-tall", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 3rem;
     justify-content: center;
     padding: 20px 0;
