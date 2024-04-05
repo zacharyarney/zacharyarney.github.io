@@ -197,13 +197,15 @@ body {
 
 .tabs .tabs-items .tabs-item .card .work-info {
     align-items: flex-start;
+    align-self: end;
     border-bottom: 1px solid black;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
     font-size: 1.8rem;
+    overflow-x: hidden;
     padding: 24px 0;
-    width: 60%;
+    width: 80%;
 }
 
 @media (max-width: 600px) {
@@ -213,7 +215,7 @@ body {
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .description {
-    margin: 0 0 12px;
+    margin: 0 25% 12px 0;
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .project-name {
@@ -221,6 +223,7 @@ body {
     font-variation-settings: 'wdth' 66, 'wght' 800;
     font-size: 2.4rem;
     height: 3rem;
+    white-space: nowrap;
     width: 100%;
 }
 
