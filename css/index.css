@@ -138,7 +138,7 @@ body {
 
 .tabs {
     background: #f5f5f5;
-    border: 2px solid black;
+    border: 2px solid #303030;
     margin: 50px 0 40px;
     padding-bottom: 40px;
     width: 100%;
@@ -186,7 +186,7 @@ body {
 }
 
 .tabs .tabs-items .tabs-item .card img {
-    border: 2px solid black;
+    border: 2px solid #303030;
     height: auto;
     width: 100%;
 }
@@ -266,7 +266,7 @@ body {
 }
 
 .tabs .tabs-links .separator {
-    border-left: 2px solid black;
+    border-left: 2px solid #303030;
     height: inherit;
     width: 0;
 }
@@ -274,7 +274,7 @@ body {
 .tabs .tabs-links .tabs-link {
     align-items: center;
     background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #303030;
     border-radius: 0px;
     cursor: pointer;
     display: flex;
