@@ -138,7 +138,7 @@ body {
 
 .tabs {
     background: #f5f5f5;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 50px 0 40px;
     padding-bottom: 40px;
     width: 100%;
@@ -162,18 +162,14 @@ body {
 .tabs .tabs-items .tabs-item .card {
     align-items: center;
     background: white;
+    border: 2px solid #303030;
     box-shadow: 24px 24px #303030;
     display: flex;
     flex-direction: column;
-    margin: 50px 5%;
+    margin: 50px 8% 50px 5%;
     max-width: 800px;
     padding: 50px 0px;
 }
-
-/*.tabs .tabs-items .tabs-item .card:hover {*/
-/*    background: lightyellow;*/
-/*    box-shadow: 24px 24px dodgerblue;*/
-/*}*/
 
 .tabs .tabs-items .tabs-item .card .image-wrap {
     width: 60%;
@@ -190,7 +186,7 @@ body {
 }
 
 .tabs .tabs-items .tabs-item .card img {
-    border: 1px solid black;
+    border: 2px solid black;
     height: auto;
     width: 100%;
 }
@@ -198,7 +194,6 @@ body {
 .tabs .tabs-items .tabs-item .card .work-info {
     align-items: flex-start;
     align-self: end;
-    border-bottom: 1px solid black;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
@@ -271,7 +266,7 @@ body {
 }
 
 .tabs .tabs-links .separator {
-    border-left: 1px solid black;
+    border-left: 2px solid black;
     height: inherit;
     width: 0;
 }
@@ -279,7 +274,7 @@ body {
 .tabs .tabs-links .tabs-link {
     align-items: center;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     border-radius: 0px;
     cursor: pointer;
     display: flex;
@@ -299,7 +294,7 @@ body {
 
 .tabs .tabs-links .tabs-link-selected {
     background-color: #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
     opacity: unset;
     z-index: 2;
 }
