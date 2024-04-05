@@ -84,7 +84,6 @@ body {
     font-variation-settings: 'wdth' 66, 'wght' 800;
     font-size: 2.4rem;
     height: 3rem;
-    text-decoration: none;
 }
 
 .info header .contact a:hover {
@@ -218,12 +217,21 @@ body {
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .project-name {
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 66, 'wght' 800;
+    font-size: 2.4rem;
+    height: 3rem;
     width: 100%;
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .project-name:hover {
     background: #303030;
     color: white;
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 120, 'wght' 900;
+    font-size: 2.4rem;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .credit {
@@ -231,6 +239,10 @@ body {
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .repo {
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 66, 'wght' 800;
+    font-size: 2.4rem;
+    height: 3rem;
     margin: 12px 0 0;
     width: 100%;
 }
@@ -238,6 +250,11 @@ body {
 .tabs .tabs-items .tabs-item .card .work-info .repo:hover {
     background: #303030;
     color: white;
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 120, 'wght' 900;
+    font-size: 2.4rem;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .tabs .tabs-items .tabs-item-selected {
