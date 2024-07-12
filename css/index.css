@@ -167,12 +167,39 @@ body {
     display: flex;
     flex-direction: column;
     margin: 50px 8% 50px 5%;
-    max-width: 800px;
+    max-width: 700px;
     padding: 50px 0px;
 }
 
+.left {
+    align-self: start;
+}
+
+.right {
+    align-self: end;
+}
+
+@media (max-width: 600px) {
+    .left {
+        align-self: unset;
+    }
+
+    .right {
+        align-self: unset;
+    }
+}
+
+.tabs .tabs-items .tabs-item .card .card-header {
+    display: flex;
+    /*justify-content: center;*/
+    font-family: "allotrope-variable", sans-serif;
+    font-variation-settings: 'wdth' 66, 'wght' 900;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
 .tabs .tabs-items .tabs-item .card .image-wrap {
-    width: 60%;
+    width: 80%;
 }
 
 @media (max-width: 600px) {
@@ -200,17 +227,26 @@ body {
     font-size: 1.8rem;
     overflow-x: hidden;
     padding: 24px 0;
-    width: 80%;
+    width: 90%;
 }
 
 @media (max-width: 600px) {
     .tabs .tabs-items .tabs-item .card .work-info {
+        align-self: unset;
+        overflow-x: auto;
+        padding: 0;
         width: 80%;
     }
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .description {
-    margin: 0 25% 12px 0;
+    margin: 0 12% 12px 0;
+}
+
+@media (max-width: 600px) {
+    .tabs .tabs-items .tabs-item .card .work-info .description {
+        margin: 0 0 12px 0;
+    }
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .project-name {
@@ -230,6 +266,21 @@ body {
     font-size: 2.4rem;
     padding-left: 2px;
     padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+    .tabs .tabs-items .tabs-item .card .work-info .project-name {
+        height: auto;
+        padding-left: 2px;
+        padding-top: 2px;
+        text-wrap: wrap;
+    }
+
+    .tabs .tabs-items .tabs-item .card .work-info .project-name:hover {
+        font-family: "allotrope-variable", sans-serif;
+        font-variation-settings: 'wdth' 66, 'wght' 800;
+        height: auto;
+    }
 }
 
 .tabs .tabs-items .tabs-item .card .work-info .credit {
@@ -253,6 +304,18 @@ body {
     font-size: 2.4rem;
     padding-left: 2px;
     padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+    .tabs .tabs-items .tabs-item .card .work-info .repo {
+        padding-left: 2px;
+        padding-top: 2px;
+    }
+
+    .tabs .tabs-items .tabs-item .card .work-info .repo:hover {
+        font-family: "allotrope-variable", sans-serif;
+        font-variation-settings: 'wdth' 66, 'wght' 800;
+    }
 }
 
 .tabs .tabs-items .tabs-item-selected {
