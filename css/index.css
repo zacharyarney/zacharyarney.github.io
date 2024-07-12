@@ -350,6 +350,7 @@ body {
     font-size: 3rem;
     justify-content: center;
     padding: 20px 0;
+    text-decoration: none   ;
 }
 
 .tabs .tabs-links .tabs-link:hover {
