@@ -15,7 +15,7 @@ class TabLink {
 
   select() {
     const anchor = location.hash ? location.hash.slice(1) : 'code';
-    if (this.item.classList.contains(anchor)) {
+    if (this.data === anchor) {
       // Get all the elements with the tabs-link class
       let links = document.querySelectorAll('.tabs-link');
       // Using a loop or the forEach method remove the 'tabs-link-selected' class from all the links
